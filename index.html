@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>ALBERTA WING SHACK | COCHRANE</title>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
@@ -11,7 +11,6 @@
       const menu = document.getElementById("nav-menu");
       menu.classList.toggle("active");
     }
-
     function closeMenu() {
       const menu = document.getElementById("nav-menu");
       menu.classList.remove("active");
@@ -24,9 +23,7 @@
       <a href="#home" class="logo-link">
         <img src="/images/wingshacklogopng.png" alt="Alberta Wing Shack Logo" class="nav-logo">
       </a>
-      
       <div class="hamburger" onclick="toggleMenu()">☰</div>
-      
       <nav id="nav-menu">
         <ul>
           <li><a href="#combos" onclick="closeMenu()">Combos</a></li>
@@ -46,7 +43,7 @@
         <p class="hero-sub">69+ House-Made Flavours. Freshly Sourced. Cochrane's Finest.</p>
         <div class="cta-wrap">
           <a href="#order-online" class="btn">Order Now</a>
-          <a href="#flavours" class="btn secondary">View Menu</a>
+          <a href="#flavours" class="btn secondary">View Flavours</a>
         </div>
       </div>
     </section>
@@ -57,57 +54,83 @@
         <div class="price-card">
           <div class="badge">$16.99</div>
           <h3 class="marker-font">Combo 1</h3>
-          <p>1 lb Wings<br>1 Regular Fries<br>1 Pepsi</p>
+          <p>1 pound of wings, 1 regular fries & 1 Pepsi</p>
         </div>
         <div class="price-card">
           <div class="badge">$32.99</div>
           <h3 class="marker-font">Combo 2</h3>
-          <p>2 lbs Wings<br>1 Large Fries<br>2 Pepsi</p>
+          <p>2 pounds of wings, 1 large fries & 2 Pepsi</p>
         </div>
         <div class="price-card featured">
           <div class="badge">$68.99</div>
-          <h3 class="marker-font">Family Combo</h3>
-          <p>3 lbs Wings<br>Chicken Fingers<br>2 Large Sides<br>4 Pepsi</p>
+          <h3 class="marker-font">Family Combo Wings</h3>
+          <p>3 pounds of wings, chicken fingers, 2 large sides & 4 Pepsi</p>
         </div>
         <div class="price-card">
           <div class="badge">$48.99</div>
-          <h3 class="marker-font">Fried Chicken Combo</h3>
-          <p>10 Pcs Fried Chicken<br>2 Large Sides<br>4 Pepsi</p>
+          <h3 class="marker-font">Family Combo Fried Chicken</h3>
+          <p>10 pieces fried chicken, 2 large sides & 4 Pepsi</p>
         </div>
       </div>
     </section>
 
     <section id="flavours" class="dark-section section-padding">
       <h2 class="marker-font section-title">THE <span class="red-text">69+ FLAVOURS</span></h2>
-      <div class="flavour-wrap">
-        <div class="flavour-cat">
-          <h3 class="marker-font">SHACK ORIGINALS</h3>
-          <div class="tag-container">
-            <span>Banff</span><span>Canmore</span><span>Lake Louise</span><span>Vermillion Lakes</span><span>Exshaw</span><span>Jasper</span><span>Jaffna</span><span>Mt. Rundle</span>
+      <p class="flavour-note">*Shack flavours are made in house!</p>
+      
+      <div class="flavour-container">
+        <div class="flavour-block">
+          <h3 class="marker-font block-title">LOCAL LEGENDS</h3>
+          <div class="flavour-list">
+            <div class="f-item"><strong>BANFF:</strong> <br> Shack butter chicken with pineapple sauce</div>
+            <div class="f-item"><strong>CANMORE:</strong> <br> Shack onion jalapeño</div>
+            <div class="f-item"><strong>LAKE LOUISE:</strong> <br> Shack garlic sauce</div>
+            <div class="f-item"><strong>VERMILLION LAKES:</strong> <br> Shack garlic with pineapple purée</div>
+            <div class="f-item"><strong>EXSHAW:</strong> <br> Shack spicy peanut sauce</div>
+            <div class="f-item"><strong>MT. RUNDLE:</strong> <br> Shack onion jalapeño with butter chicken</div>
+            <div class="f-item"><strong>JASPER:</strong> <br> Shack lime cayenne</div>
+            <div class="f-item"><strong>JAFFNA:</strong> <br> 🌶️🌶️🌶️</div>
           </div>
         </div>
-        <div class="flavour-cat">
-          <h3 class="marker-font">PRO TEAMS</h3>
-          <div class="tag-container">
-            <span class="team">Calgary Flames</span><span class="team">Edmonton Oilers</span><span class="team">Vancouver Canucks</span><span class="team">Winnipeg Jets</span><span class="team">Toronto Maple Leafs</span><span class="team">Montreal Canadiens</span><span class="team">Ottawa Senators</span>
+
+        <div class="flavour-block">
+          <h3 class="marker-font block-title">FAN FAVOURITES</h3>
+          <div class="flavour-list">
+            <div class="f-item"><strong>CALGARY FLAMES:</strong> <br> Shack spicy & sriracha</div>
+            <div class="f-item"><strong>EDMONTON OILERS:</strong> <br> Hot parmesan</div>
+            <div class="f-item"><strong>MONTREAL CANADIENS:</strong> <br> Shack sweet & spicy</div>
+            <div class="f-item"><strong>OTTAWA SENATORS:</strong> <br> Hot & blue cheese</div>
+            <div class="f-item"><strong>VANCOUVER CANUCKS:</strong> <br> Garlic parmesan</div>
+            <div class="f-item"><strong>WINNIPEG JETS:</strong> <br> Orange ginger</div>
+            <div class="f-item"><strong>TORONTO MAPLE LEAFS:</strong> <br> Apple butter mesquite</div>
           </div>
         </div>
-        <div class="flavour-cat">
-          <h3 class="marker-font">DRY RUBS</h3>
-          <div class="tag-container">
-            <span>Lemon Pepper</span><span>Salt & Vinegar</span><span>Tandoori</span><span>Dill Pickle Parm</span><span>Garlic Plus</span><span>Garlic Cajun</span><span>Salt & Pepper</span><span>Chipotle Mango</span><span>Tex Mex</span><span>Taco</span><span>Garlic Pepper</span><span>Spicy Cajun</span><span>Cajun</span>
+
+        <div class="flavour-block">
+          <h3 class="marker-font block-title">HOT & CREAMY</h3>
+          <div class="flavour-grid-mini">
+            <span>RANCH</span><span>PEPPER RANCH</span><span>JERK</span><span>HOT RANCH</span><span>HOT</span><span>HOT TERIYAKI</span><span>HOT HONEY TERIYAKI</span><span>BUFFALO HOT</span><span>HOT LEMON RANCH</span><span>HOT JERK</span><span>HOMI RANCH</span><span>DILL PARM</span><span>HOT DILL</span>
           </div>
         </div>
-        <div class="flavour-cat">
-          <h3 class="marker-font">SWEET & SAVOURY</h3>
-          <div class="tag-container">
-            <span>Honey Garlic</span><span>Honey Mustard</span><span>Honey BBQ</span><span>Honey Teriyaki</span><span>Honey Thai</span><span>Sweet Heat</span><span>Smokey BBQ</span><span>Bold BBQ</span><span>Plum</span><span>Hawaiian Honey</span><span>Honey Dill</span><span>Honey Plum</span><span>Honey Med</span><span>Honey Buffalo</span><span>Honey Hot</span><span>Honey Jerk</span><span>Sweet Chili</span><span>Sweet & Sour</span>
+
+        <div class="flavour-block">
+          <h3 class="marker-font block-title">DRY RUBS</h3>
+          <div class="flavour-grid-mini">
+            <span>CAJUN</span><span>TEX MEX</span><span>TACO</span><span>GARLIC PEPPER</span><span>SPICY CAJUN</span><span>LEMON PEPPER</span><span>SALT & VINEGAR</span><span>TANDOORI</span><span>DILL PICKLE</span><span>PARMESAN</span><span>GARLIC PLUS</span><span>GARLIC CAJUN</span><span>SALT & PEPPER</span><span>CHIPOTLE MANGO</span>
           </div>
         </div>
-        <div class="flavour-cat">
-          <h3 class="marker-font">HOT & BBQ</h3>
-          <div class="tag-container">
-            <span>Hot</span><span>Buffalo Hot</span><span>Jerk</span><span>Hot Ranch</span><span>Hot Teriyaki</span><span>Hot Honey Teriyaki</span><span>Hot Jerk</span><span>Hot Dill</span><span>Forty Creek BBQ</span><span>Kansas BBQ</span><span>Buffalo BBQ</span><span>Smokey Jerk</span><span>Hot Jerk BBQ</span>
+
+        <div class="flavour-block">
+          <h3 class="marker-font block-title">SWEET AS HONEY</h3>
+          <div class="flavour-grid-mini">
+            <span>HONEY GARLIC</span><span>HONEY MUSTARD</span><span>HONEY BBQ</span><span>HONEY TERIYAKI</span><span>HONEY DILL</span><span>TERIYAKI</span><span>PLUM</span><span>HONEY PLUM</span><span>HONEY MED</span><span>HONEY THAI</span><span>HONEY BUFFALO</span><span>HONEY HOT</span><span>HONEY JERK</span><span>HAWAIIAN HONEY</span><span>SWEET CHILI</span><span>SWEET & SOUR</span><span>SWEET HEAT</span>
+          </div>
+        </div>
+
+        <div class="flavour-block">
+          <h3 class="marker-font block-title">BBQ</h3>
+          <div class="flavour-grid-mini">
+            <span>BBQ</span><span>SMOKEY JERK</span><span>BUFFALO BBQ</span><span>KANSAS BBQ</span><span>HOT JERK BBQ</span><span>FORTY CREEK BBQ</span><span>SMOKEY BBQ</span><span>BOLD BBQ</span><span>RANCH BBQ</span><span>SMOKEY BLUE</span>
           </div>
         </div>
       </div>
@@ -119,12 +142,12 @@
         <div class="menu-item-box">
           <span class="item-price">$9.99</span>
           <h3 class="marker-font">Crispy Chicken Burger</h3>
-          <p>Swiss cheese, lettuce, tomato, mayo & Shack spicy sauce.</p>
+          <p>Crispy chicken, Swiss cheese, lettuce, tomato, mayo & Shack spicy sauce.</p>
         </div>
         <div class="menu-item-box">
           <span class="item-price">$10.99</span>
-          <h3 class="marker-font">Doritos Burger</h3>
-          <p>Crushed Doritos, Swiss cheese, lettuce, tomato, mayo & Shack spicy.</p>
+          <h3 class="marker-font">Doritos Chicken Burger</h3>
+          <p>Doritos crispy chicken, Swiss cheese, lettuce, tomato, mayo & Shack spicy sauce.</p>
         </div>
         <div class="menu-item-box">
           <span class="item-price">$9.99</span>
@@ -133,24 +156,50 @@
         </div>
         <div class="menu-item-box">
           <span class="item-price">$9.99</span>
-          <h3 class="marker-font">Buffalo Wrap</h3>
-          <p>Grilled chicken, lettuce, red onion, buffalo sauce.</p>
-        </div>
-        <div class="menu-item-box">
-          <span class="item-price">$9.99</span>
           <h3 class="marker-font">Crispy Chicken Wrap</h3>
           <p>Chicken strips, lettuce, tomato, ranch dressing.</p>
         </div>
         <div class="menu-item-box">
           <span class="item-price">$9.99</span>
+          <h3 class="marker-font">Buffalo Chicken Wrap</h3>
+          <p>Grilled chicken, lettuce, red onion, buffalo sauce.</p>
+        </div>
+        <div class="menu-item-box">
+          <span class="item-price">$9.99</span>
           <h3 class="marker-font">Caesar Chicken Wrap</h3>
-          <p>Grilled chicken, parmesan, bacon, romaine, Caesar dressing.</p>
+          <p>Grilled chicken, parmesan cheese, bacon, romaine lettuce, Caesar dressing.</p>
+        </div>
+        <div class="menu-item-box">
+          <span class="item-price">$10.99</span>
+          <h3 class="marker-font">Chicken Quesadilla</h3>
+          <p>Grilled chicken, cheese, green pepper, Shack garlic sauce.</p>
+        </div>
+        <div class="menu-item-box">
+          <span class="item-price">$9.99</span>
+          <h3 class="marker-font">Vegetable Wrap</h3>
+          <p>Lettuce, tomato, cucumber, green pepper, ranch.</p>
+        </div>
+        <div class="menu-item-box">
+          <span class="item-price">$10.99</span>
+          <h3 class="marker-font">Chicken Fingers</h3>
+          <p>With your choice of plum or honey mustard sauce.</p>
         </div>
       </div>
     </section>
 
-    <section id="sides" class="dark-section section-padding">
-      <h2 class="marker-font section-title">SIDES <span class="yellow-text">(REG / LARGE)</span></h2>
+    <section id="fried-chicken" class="dark-section section-padding">
+        <h2 class="marker-font section-title">FRIED <span class="yellow-text">CHICKEN</span></h2>
+        <div class="sides-table">
+          <div class="side-row"><span>2 PIECES</span> <span>$7.49</span></div>
+          <div class="side-row"><span>4 PIECES</span> <span>$14.99</span></div>
+          <div class="side-row"><span>6 PIECES</span> <span>$19.99</span></div>
+          <div class="side-row"><span>8 PIECES</span> <span>$26.99</span></div>
+        </div>
+        <p style="text-align:center; margin-top:20px; color:var(--yellow);">Make it a meal for $4.50! Includes 1 regular fries and 1 Pepsi</p>
+    </section>
+
+    <section id="sides" class="section-padding">
+      <h2 class="marker-font section-title">SIDES <span class="yellow-text"><br> (REG / LARGE)</span></h2>
       <div class="sides-table">
         <div class="side-row"><span class="marker-font">Fries</span> <span>$4.99 / $7.49</span></div>
         <div class="side-row"><span class="marker-font">Yam Fries</span> <span>$6.49 / $8.49</span></div>
@@ -158,6 +207,7 @@
         <div class="side-row"><span class="marker-font">Onion Rings</span> <span>$6.99 / $8.25</span></div>
         <div class="side-row"><span class="marker-font">Jasmine Rice</span> <span>$4.25 / $6.25</span></div>
         <div class="side-row"><span class="marker-font">Caesar Salad</span> <span>$7.49 / $9.49</span></div>
+        <div class="side-row"><span class="marker-font">Garden Salad</span> <span>$7.99 / $9.99</span></div>
         <div class="side-row"><span class="marker-font">Jaffna Fries</span> <span>$10.99</span></div>
         <div class="side-row"><span class="marker-font">Poutine</span> <span>$10.99</span></div>
       </div>
@@ -166,20 +216,22 @@
     <section id="order-online" class="order-section section-padding">
       <h2 class="marker-font section-title">ORDER <span class="yellow-text">NOW</span></h2>
       <div class="order-grid">
-        <a href="https://albertawingshack.square.site/..." class="order-card" target="_blank">
+        <a href="https://albertawingshack.square.site/?owg-fulfillment=delivery&fulfillment=DELIVERY&location=11edc402e51c62039f8bac1f6bbbd01e&location_id=LW3MP442C5WQC&rwg_token=AFd1xnEjbPHmPwgamQL0dmFq0ibzTuErXRGLAkw6YEM-EOkaj2QrD73yWywID-_sjesl0_23xEYYfGP5owa1-lsL80CXjG-rrA%3D%3D" target="_blank" rel="noopener noreferrer" class="order-card">
           <img src="/images/Square-logo-white.jpeg" alt="Square" class="order-logo">
         </a>
-        <a href="https://www.doordash.com/..." class="order-card" target="_blank">
+        
+        <a href="https://www.doordash.com/store/alberta-wing-shack-cochrane-26115513/?utm_campaign=gpa&rwg_token=AFd1xnE2ymX59YCSlP1xgyv7s4oSVjpqDqBoiD1pNGJy8x8e1wzr3aXKoj4SNhGh-pAmmeFf7g3qFWbL-R74UXpkwyl60IdnJA%3D%3D" target="_blank" rel="noopener noreferrer" class="order-card">
           <img src="/images/DoorDash-logo.png" alt="DoorDash" class="order-logo">
         </a>
-        <a href="https://www.skipthedishes.com/..." class="order-card" target="_blank">
-          <img src="/images/skiplogo.png" alt="Skip The Dishes" class="order-logo">
+        
+        <a href="https://www.skipthedishes.com/alberta-wing-shack-cochrane?serviceType=delivery&utm_source=google&utm_medium=organic&utm_campaign=foodorder" target="_blank" rel="noopener noreferrer" class="order-card">
+          <img src="/images/skiplogo.png" alt="Skip" class="order-logo">
         </a>
-        <a href="https://www.ubereats.com/..." class="order-card" target="_blank">
-          <img src="/images/ubereatslogo.png" alt="Uber Eats" class="order-logo">
+        
+        <a href="https://www.ubereats.com/ca/store/alberta-wing-shack-cochrane-210-grande-boulevard/RSYEq0AgVmy5oHlXNz5iJQ?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas&rwg_token=AFd1xnG82BLMJ4nSBGdPFiLrKn-BS2eMny25I59K6z5ays-cxzsK23CmPVmOE0ruWvYJpaM9PTz1FZ6-fc6RxLzdJGm1LIjDxA%3D%3D" target="_blank" rel="noopener noreferrer" class="order-card">
+          <img src="/images/ubereatslogo.png" alt="Uber" class="order-logo">
         </a>
       </div>
-      
       <div class="order-phone-wrap">
         <h3 class="marker-font">GIVE US A CALL</h3>
         <p>201 Grande Boulevard, Unit 1, Cochrane</p>
@@ -189,7 +241,7 @@
   </main>
 
   <footer>
-    <p>© 2026 ALBERTA WING SHACK | Website by Rafael Jimenez</p>
+    <p>© 2026 ALBERTA WING SHACK | Website by Rafael Jiménez</p>
   </footer>
 </body>
 </html>
